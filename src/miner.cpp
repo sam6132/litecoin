@@ -49,7 +49,8 @@ int64_t UpdateTime(CBlockHeader* pblock, const Consensus::Params& consensusParam
     if (consensusParams.fPowAllowMinDifficultyBlocks)
         pblock->nBits = GetNextWorkRequired(pindexPrev, pblock, consensusParams);
 
-    return nNewTime - nOldTime;
+   // return nNewTime - nOldTime;
+	return 60;
 }
 
 BlockAssembler::Options::Options() {
